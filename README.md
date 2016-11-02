@@ -19,26 +19,26 @@ The Cloud9 IDE team
 
 ----------------------------------------------------------------------
 
-1. WorkSpaceの作成
+* WorkSpaceの作成
 
 https://c9.io にアクセスし、アカウントを登録する。
 登録後、WorkSpaceを作成する。
 （Choose a templateは「Blank」で問題ありません）
 
-2. リポジトリからreact勉強用のモジュールをclone
+* リポジトリからreact勉強用のモジュールをclone
 
 ```bash:command
 git clone https://github.com/ajm-web/react-study.git
 ```
 
-3. npm installを実行
+* npm installを実行
 
 ```bash:command
 cd react-study
 npm install
 ```
 
-4. ビルドを実行
+* ビルドを実行
 
 ```bash:command
 npm start
@@ -47,7 +47,7 @@ npm start
 コマンド実行後、/react-study/dist/ ディレクトリが作られ、
 dist内にビルド後のモジュールが生成
 
-5. HelloWorld
+* HelloWorld
 
 /react-study/dist/index.html を右クリックして、
 「Run」を選択する。
