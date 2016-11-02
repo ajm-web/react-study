@@ -17,43 +17,39 @@ http://www.youtube.com/user/c9ide.
 Happy coding!
 The Cloud9 IDE team
 
-mkdir -m 705 project
-cd ./project
-git init
-        
-mkdir -m 705 -p ./src/js/calculator ./src/style ./dist
-touch .editorconfig
+----------------------------------------------------------------------
 
-        root = true
-        
-        [*]
-        charset = utf-8
-        indent_style = tab
-        indent_size = 2
-        end_of_line = lf
-        insert_final_newline = true
-        trim_trailing_whitespace = true
-        
-        [*.md]
-        trim_trailing_whitespace = false
-        
-        [package.json]
-        indent_style = space
-        end_of_line = lf
-        
-        [.editorconfig]
-        end_of_line = lf
+1. WorkSpaceの作成
 
-.gitignore
-package.json
-tsconfig.json
-tslint.json
-typings.json
-webpack.config.js
+https://c9.io にアクセスし、アカウントを登録する。
+登録後、WorkSpaceを作成する。
+（Choose a templateは「Blank」で問題ありません）
 
+2. リポジトリからreact勉強用のモジュールをclone
+
+```bash:command
+git clone https://github.com/ajm-web/react-study.git
+```
+
+3. npm installを実行
+
+```bash:command
+cd react-study
 npm install
-npm start
+```
 
-git init
-git add .
-git commit -m "initial commit"
+4. ビルドを実行
+
+```bash:command
+npm start
+```
+
+コマンド実行後、/react-study/dist/ ディレクトリが作られ、
+dist内にビルド後のモジュールが生成
+
+5. HelloWorld
+
+/react-study/dist/index.html を右クリックして、
+「Run」を選択する。
+URLが表示されるので、ページにアクセスする。
+ページにHello World!と表示されれば成功
