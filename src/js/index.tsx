@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import HelloComponent from './calculator/Hello';
+import PushButtonComponent from './calculator/PushButtonComponent';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 ReactDom.render(
