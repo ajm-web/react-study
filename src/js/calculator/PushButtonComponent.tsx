@@ -15,7 +15,7 @@ constructor(props: PushButton) {
     return (
       <div>
         <AppBar title={"PushButton"} showMenuIconButton={false} />
-        <TextField fullWidth={true} disabled={true} />
+        <TextField id={"result-area"} fullWidth={true} disabled={true} />
         <NumberButtonArea row={3} col={3}/>
       </div>
     );

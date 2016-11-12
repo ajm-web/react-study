@@ -3,13 +3,13 @@ import {range} from "lodash";
 import NumberButtonComponent from "./NumberButtonComponent"
 import {GridList, GridTile} from "material-ui/GridList";
 
-export interface ButtonRow {
+export interface NumberButtonArea {
     row: number;
     col: number;
 }
 
-export default class ButtonRowComponent extends React.Component<ButtonRow, {}> {
-constructor(props: ButtonRow) {
+export default class NumberButtonAreaComponent extends React.Component<NumberButtonArea, {}> {
+constructor(props: NumberButtonArea) {
     super(props);
     }
     
@@ -25,7 +25,7 @@ constructor(props: ButtonRow) {
     render() {
         var buttons = this.numberButtons.map(function(buttonNumber){
             return(
-                <GridTile cols={1}><NumberButtonComponent buttonNumber={buttonNumber} key={buttonNumber} /></GridTile>
+                <GridTile cols={1} key={buttonNumber.toString()} ><NumberButtonComponent buttonNumber={buttonNumber} /></GridTile>
             );
         });
         return (
