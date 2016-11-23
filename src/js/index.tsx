@@ -1,12 +1,8 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import HelloComponent from './calculator/Hello';
-import PushButtonComponent from './calculator/PushButtonComponent';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import HelloComponent from './hello/Hello';
 
 ReactDom.render(
-  <MuiThemeProvider>
-    <HelloComponent content={'Hello World!'}/>
-  </MuiThemeProvider>
-  , document.getElementById('calculator')
+  <HelloComponent content={'Hello World!'}/>
+  , document.getElementById('hello')
 );

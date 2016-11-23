@@ -4,7 +4,6 @@ import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 
 export interface PushButton {
-    content: String;
 }
 
 export default class PushButtonComponent extends React.Component<PushButton, {}> {
