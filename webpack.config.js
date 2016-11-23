@@ -5,11 +5,12 @@ const plugins = webpackLoadPlugins();
 
 module.exports = {
   entry: {
-    bundle: './src/js/index.tsx'
+    bundle: './src/js/index.tsx',
+    calculator: './src/js/calculator.tsx'
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   devServer: {
     contentBase: 'dist',
@@ -38,7 +39,8 @@ module.exports = {
   },
   plugins: [
     new plugins.copy([
-      { from: './src/index.html' }
+      { from: './src/index.html' },
+      { from: './src/calculator.html' }
     ])
   ]
 };
