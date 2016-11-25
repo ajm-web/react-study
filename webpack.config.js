@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const webpackLoadPlugins = require('webpack-load-plugins');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const plugins = webpackLoadPlugins();
 
 module.exports = {
@@ -38,6 +39,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new ProgressBarPlugin(),
     new plugins.copy([
       { from: './src/index.html' },
       { from: './src/calculator.html' }
