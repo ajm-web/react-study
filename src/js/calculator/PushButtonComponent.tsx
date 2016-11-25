@@ -13,23 +13,23 @@ export interface PushButtonState {
 
 export default class PushButtonComponent extends React.Component<PushButton, PushButtonState> {
 constructor(props: PushButton) {
-    super(props);
+  super(props);
 
-    this.state = { outputString: "0" };
+  this.state = { outputString: "0" };
 
-    NumberInputStore.instance.subscribe(() => {
-      const state = NumberInputStore.instance.getState();
-      this.setState({ outputString: state.numberInputList.join(" ") });
-    });
+  NumberInputStore.instance.subscribe(() => {
+    const state = NumberInputStore.instance.getState();
+    this.setState({ outputString: state.numberInputList.join(" ") });
+  });
   }
 
   render() {
-    return (
-      <div>
-        <AppBar title={"PushButton"} showMenuIconButton={false} />
-        <TextField id={"result-area"} fullWidth={true} disabled={true} value={this.state.outputString} />
-        <NumberButtonArea row={3} col={3}/>
-      </div>
-    );
+  return (
+    <div>
+    <AppBar title={"PushButton"} showMenuIconButton={false} />
+    <TextField id={"result-area"} fullWidth={true} disabled={true} value={this.state.outputString} />
+    <NumberButtonArea row={3} col={3}/>
+    </div>
+  );
   }
 }
