@@ -18,12 +18,12 @@ constructor(props: NumberButtonArea) {
     }
 
     get numberButtons() {
-        var button: number = this.countButton();
+        const button: number = this.countButton();
         return range(1, button, 1);
     }
 
     render() {
-        var buttons = this.numberButtons.map(function(buttonNumber){
+        const buttons = this.numberButtons.map(function(buttonNumber){
             return(
                 <GridTile cols={1} key={buttonNumber.toString()} ><NumberButtonComponent buttonNumber={buttonNumber} /></GridTile>
             );
