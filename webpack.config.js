@@ -17,7 +17,7 @@ module.exports = {
   },
   devServer: {
     contentBase: 'dist',
-    port: 3000
+    port: 8080
   },
   devtool: "source-map",
   resolve: {
