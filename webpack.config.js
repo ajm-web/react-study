@@ -4,6 +4,8 @@ const webpackLoadPlugins = require('webpack-load-plugins');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const plugins = webpackLoadPlugins();
 
+const tslintConfig = require("./tslint.json");
+
 module.exports = {
   entry: {
     bundle: './src/js/index.tsx',
@@ -22,6 +24,12 @@ module.exports = {
     extensions: ['', '.ts', '.tsx', '.js', 'scss']
   },
   module: {
+		preLoaders: [
+			{
+				test: /\.tsx?$/,
+				loader: 'tslint-loader'
+			}
+		],
     loaders: [
       {
         test: /\.scss$/,
@@ -44,5 +52,8 @@ module.exports = {
       { from: './src/index.html' },
       { from: './src/calculator.html' }
     ])
-  ]
+  ],
+	tslint: {
+		configuration: tslintConfig
+	}
 };
