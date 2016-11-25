@@ -1,6 +1,6 @@
 import * as React from "react";
 import {range} from "lodash";
-import NumberButtonComponent from "./NumberButtonComponent"
+import NumberButtonComponent from "./NumberButtonComponent";
 import {GridList, GridTile} from "material-ui/GridList";
 
 export interface NumberButtonArea {

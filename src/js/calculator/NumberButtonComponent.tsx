@@ -4,7 +4,7 @@ import * as NumberInputStore from "./NumberInputStore";
 import RaisedButton from "material-ui/RaisedButton";
 
 export interface NumberButton {
-    buttonNumber: number
+    buttonNumber: number;
 }
 
 export default class NumberButtonComponent extends React.Component<NumberButton, {}> {
