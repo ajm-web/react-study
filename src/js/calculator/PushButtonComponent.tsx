@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import * as NumberInputStore from "./NumberInputStore";
 import NumberButtonArea from "./NumberButtonAreaComponent"
 import AppBar from "material-ui/AppBar";

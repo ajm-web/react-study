@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import * as NumberInputActions from "./NumberInputActions";
 import * as NumberInputStore from "./NumberInputStore";
 import RaisedButton from "material-ui/RaisedButton";
