@@ -11,7 +11,7 @@ export default class NumberButtonComponent extends React.Component<NumberButton,
 constructor(props: NumberButton) {
     super(props);
     }
-    Test(buttonNumber: number){
+    Test(buttonNumber: number) {
         NumberInputStore.instance.dispatch({ type: NumberInputActions.ActionType.Push, payload: String(buttonNumber) });
     }
     render() {

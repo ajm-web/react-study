@@ -13,12 +13,12 @@ constructor(props: NumberButtonArea) {
     super(props);
     }
 
-    countButton(){
+    countButton() {
         return this.props.row * this.props.col + 1;
     }
 
     get numberButtons() {
-        var button :number = this.countButton();
+        var button: number = this.countButton();
         return range(1, button, 1);
     }
 
